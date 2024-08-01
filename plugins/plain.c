@@ -250,7 +250,7 @@ static sasl_server_plug_t plain_server_plugins[] =
     }
 };
 
-int plain_server_plug_init(const sasl_utils_t *utils,
+LIBSASL_API int plain_server_plug_init(const sasl_utils_t *utils,
 			   int maxversion,
 			   int *out_version,
 			   sasl_server_plug_t **pluglist,
@@ -470,7 +470,7 @@ static sasl_client_plug_t plain_client_plugins[] =
     }
 };
 
-int plain_client_plug_init(sasl_utils_t *utils,
+LIBSASL_API int plain_client_plug_init(sasl_utils_t *utils,
 			   int maxversion,
 			   int *out_version,
 			   sasl_client_plug_t **pluglist,

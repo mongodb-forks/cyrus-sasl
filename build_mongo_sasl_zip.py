@@ -18,4 +18,4 @@ for hdr in headers:
     filename = os.path.basename(hdr)
     shutil.copyfile(hdr, os.path.join("dist/include/sasl", filename))
 
-shutil.make_archive("sasl.zip", 'zip', "dist")
+shutil.make_archive("sasl", 'zip', "dist")

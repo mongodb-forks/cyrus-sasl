@@ -1,4 +1,8 @@
-[![Build Status:master](https://api.travis-ci.org/cyrusimap/cyrus-sasl.svg?branch=master)](https://travis-ci.org/cyrusimap/cyrus-sasl)
+This is MongoDB fork of cyrus sasl described below. This fork makes a reproducible windows build for mongodb. To rebuild sasl used by mongodb on windows, follow these steps.
+
+1. Open the win32/cyrus-sasl-core.sln in Visual Studio 2022
+2. Build Release x64 configuration.
+3. Run the build_mongo_sasl_zip.py to create a zip file matching what is used by the mongo build.
 
 
 ## Cyrus SASL
